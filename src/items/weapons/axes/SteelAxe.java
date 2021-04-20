@@ -14,8 +14,8 @@ public class SteelAxe extends Weapon implements Axe
     public SteelAxe()
     {
         super(maxUses, cost, "", "E",
-            1, 1, weight, might, hitChance, critChance, 1,
-            "");
+            1, 1, weight, might, hitChance,
+            critChance, 1, "");
         setName("Steel Axe");
     }
 }

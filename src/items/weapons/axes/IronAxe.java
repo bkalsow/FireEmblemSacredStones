@@ -14,8 +14,8 @@ public class IronAxe extends Weapon implements Axe
     public IronAxe()
     {
         super(maxUses, cost, "", "E",
-            1, 1, weight, might, hitChance, critChance, 1,
-            "");
+            1, 1, weight, might, hitChance,
+            critChance, 1, "");
         setName("Iron Axe");
     }
 }
