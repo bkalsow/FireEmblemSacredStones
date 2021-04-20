@@ -13,9 +13,10 @@ public class Axereaver extends Weapon implements Lance
 
     public Axereaver()
     {
-        super(maxUses, cost, "Strong against axes", "C", 2,
-            weight, might, hitChance, critChance,
-            1, 1, "Advantage vs Axes. Weak vs. Swords");
+        super(maxUses, cost, "Strong against axes.",
+            "C", 1, 1, weight, might, hitChance,
+            critChance, 2,
+            "Advantage vs. Axes. Weak vs Swords.");
         setName("Axereaver");
     }
 }

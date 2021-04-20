@@ -13,9 +13,9 @@ public class SilverLance extends Weapon implements Lance
 
     public SilverLance()
     {
-        super(maxUses, cost, "", "A", 1,
+        super(maxUses, cost, "", "A", 1, 1,
             weight, might, hitChance, critChance,
-            1, 1, "");
+            1, "");
         setName("Silver Lance");
     }    
 }

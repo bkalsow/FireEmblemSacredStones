@@ -13,9 +13,9 @@ public class BrightLance extends Weapon implements Lance
 
     public BrightLance()
     {
-        super(maxUses, cost, "", "E", 1,
+        super(maxUses, cost, "", "E", 1, 1,
             weight, might, hitChance, critChance,
-            1, 1, "Effective vs Monsters. Cannot be obtained normally.");
+            1, "Effective vs Monsters. Cannot be obtained normally.");
         setName("Bright Lance");
     }
 }

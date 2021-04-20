@@ -13,9 +13,9 @@ public class ShortSpear extends Weapon implements Lance
 
     public ShortSpear()
     {
-        super(maxUses, cost, "", "C", 1,
+        super(maxUses, cost, "", "C", 1, 2,
             weight, might, hitChance, critChance,
-            1, 2, "");
+            1, "");
         setName("Short Spear");
     }
 }

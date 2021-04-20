@@ -14,8 +14,8 @@ public class KillerLance extends Weapon implements Lance
     public KillerLance()
     {
         super(maxUses, cost, "Improves critical hit rate.",
-            "C", 1, weight, might, hitChance, critChance,
-            1, 1, "");
+            "C", 1, 1, weight, might, hitChance, critChance,
+            1, "");
         setName("Killer Lance");
     } 
 }

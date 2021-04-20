@@ -13,9 +13,9 @@ public class ToxinLance extends Weapon implements Lance
 
     public ToxinLance()
     {
-        super(maxUses, cost, "", "E",1,
+        super(maxUses, cost, "", "E", 1, 1,
             weight, might, hitChance, critChance,
-            1, 1, "Inflicts Poison on contact.");
+            1, "Inflicts Poison on contact.");
         setName("Toxin Lance");
     }        
 }

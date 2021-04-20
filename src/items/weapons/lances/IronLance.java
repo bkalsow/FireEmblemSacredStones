@@ -13,9 +13,9 @@ public class IronLance extends Weapon implements Lance
 
     public IronLance()
     {
-        super(maxUses, cost, "", "E", 1,
+        super(maxUses, cost, "", "E", 1, 1,
             weight, might, hitChance, critChance,
-            1, 1, "");
+            1, "");
         setName("Iron Lance");
     }
 }

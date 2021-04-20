@@ -13,9 +13,9 @@ public class HeavySpear extends Weapon implements Lance
 
     public HeavySpear()
     {
-        super(maxUses, cost, "Effective against knights.", "D", 1,
-            weight, might, hitChance, critChance,
-            1, 1, "Effective vs. Armored units");
+        super(maxUses, cost, "Effective against knights.",
+            "D", 1, 1, weight, might, hitChance, critChance,
+            1, "Effective vs. Armored units");
         setName("Heavy Spear");
     }
 }

@@ -13,9 +13,9 @@ public class Reginleif extends Weapon implements Lance
 
     public Reginleif()
     {
-        super(maxUses, cost, "", "Prf", 2,
+        super(maxUses, cost, "", "Prf", 1, 1,
             weight, might, hitChance, critChance,
-            1, 1, "Ephraim Only. Effective vs Armored/Horesback units.");
+            2, "Ephraim Only. Effective vs Armored/Horesback units.");
         setName("Reginleif");
     }
 }

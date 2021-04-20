@@ -13,9 +13,9 @@ public class SlimLance extends Weapon implements Lance
 
     public SlimLance()
     {
-        super(maxUses, cost, "", "E", 1,
+        super(maxUses, cost, "", "E", 1, 1,
             weight, might, hitChance, critChance,
-            1, 1, "");
+            1, "");
         setName("Slim Lance");
     }    
 }

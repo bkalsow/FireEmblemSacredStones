@@ -13,9 +13,9 @@ public class Spear extends Weapon implements Lance
 
     public Spear()
     {
-        super(maxUses, cost, "Doubles as ranged attack.", "E", 1,
+        super(maxUses, cost, "Doubles as ranged attack.", "E", 1, 2,
             weight, might, hitChance, critChance,
-            1, 2, "");
+            1, "");
         setName("Spear");
     }
 }

@@ -13,9 +13,9 @@ public class Horseslayer extends Weapon implements Lance
 
     public Horseslayer()
     {
-        super(maxUses, cost, "Effective against cavalry.", "D", 1,
-            weight, might, hitChance, critChance,
-            1, 1, "Effective vs. Horseback Units.");
+        super(maxUses, cost, "Effective against cavalry.",
+            "D", 1, 1, weight, might, hitChance, critChance,
+            1, "Effective vs. Horseback Units.");
         setName("Horseslayer");
     } 
 }

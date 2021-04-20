@@ -13,9 +13,9 @@ public class SteelLance extends Weapon implements Lance
 
     public SteelLance()
     {
-        super(maxUses, cost, "", "D", 1,
-            weight, might, hitChance, critChance,
-            1, 1, "");
+        super(maxUses, cost, "", "D",
+            1, 1, weight, might, hitChance,
+            critChance, 2, "");
         setName("Steel Lance");
     }    
 }

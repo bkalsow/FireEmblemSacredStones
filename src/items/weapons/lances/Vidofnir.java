@@ -13,9 +13,9 @@ public class Vidofnir extends Weapon implements Lance
 
     public Vidofnir()
     {
-        super(maxUses, cost, "The Sacred Twin winged Lance. Def +5", "S", 1,
-            weight, might, hitChance, critChance,
-            1, 1, "Defense +5. Effective vs. Monsters");
+        super(maxUses, cost, "The Sacred Twin winged Lance. Def +5",
+            "S", 1, 1, weight, might, hitChance, critChance,
+            1, "Defense +5. Effective vs. Monsters");
         setName("Vidofnir");
     }
 }
