@@ -1,6 +1,8 @@
 package items.weapons.anima;
 
-public interface Anima 
+import items.weapons.Magic;
+
+public interface Anima extends Magic
 {
     
 }
