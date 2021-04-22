@@ -13,7 +13,7 @@ public class Mend extends Stave
     {
         super(maxUses, cost, "Restores many HP to allies in adjacent spaces", "D", 1, 1,
             weight, might, hitChance, critChance, 3,
-            "Resstores HP equla to (User's Magic +20) to an adjacent ally.", 12);
+            "Restores HP equla to (User's Magic +20) to an adjacent ally.", 12);
         setName("Mend");
     }
 }

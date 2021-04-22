@@ -1,6 +1,6 @@
 package items.weapons.staves;
 
-public class Heal extends Stave
+public class Fortify extends Stave
 {
     private final static int maxUses = 30;
     private final static int weight = 0;
@@ -9,11 +9,11 @@ public class Heal extends Stave
     private final static int critChance = 0;
     private final static int cost = 600;
 
-    public Heal()
+    public Fortify()
     {
-        super(maxUses, cost, "Restores HP to allies in adjacent spaces", "E", 1, 1,
+        super(maxUses, cost, "Restores HP to all allies nearby", "E", 1, 7,
             weight, might, hitChance, critChance, 2,
-            "Restores HP equla to (User's Magic +10) to an adjacent ally.", 11);
-        setName("Heal");
+            "Restores HP equla to (User's Magic +10) to all allies within casting range.", 60);
+        setName("Fortify");
     }
 }

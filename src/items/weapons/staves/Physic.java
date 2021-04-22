@@ -13,7 +13,7 @@ public class Physic extends Stave
     {
         super(maxUses, cost, "Restores HP to allies at a distance", "B", 1, 7,
             weight, might, hitChance, critChance, 2,
-            "Resstores HP equla to (User's Magic +10) to one ally.", 11);
+            "Restores HP equla to (User's Magic +10) to one ally.", 11);
         setName("Physic");
     }
 }
