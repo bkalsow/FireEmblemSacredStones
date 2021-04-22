@@ -12,7 +12,7 @@ public class Warp extends Stave
     public Warp()
     {
         super(maxUses, cost, "Moves allies in adjacent spaces instantly elsewhere.", "A", 1, 1,
-            weight, might, hitChance, critChance, 2,
+            weight, might, hitChance, critChance, 7,
             "Teleports an adjacent unit to any traversible andviewable space on the map within the range 1-Mag/2, where Mag is the user's Magic stat.", 85);
         setName("Warp");
     }

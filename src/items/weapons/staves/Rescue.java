@@ -12,7 +12,7 @@ public class Rescue extends Stave
     public Rescue()
     {
         super(maxUses, cost, "Moves allies from distant spaces to adjacent ones.", "E", 1, 7,
-            weight, might, hitChance, critChance, 2,
+            weight, might, hitChance, critChance, 7,
             "Teleports one ally to a space adjacent to user.", 40);
         setName("Rescue");
     }

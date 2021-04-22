@@ -12,7 +12,7 @@ public class Fortify extends Stave
     public Fortify()
     {
         super(maxUses, cost, "Restores HP to all allies nearby", "E", 1, 7,
-            weight, might, hitChance, critChance, 2,
+            weight, might, hitChance, critChance, 3,
             "Restores HP equla to (User's Magic +10) to all allies within casting range.", 60);
         setName("Fortify");
     }
