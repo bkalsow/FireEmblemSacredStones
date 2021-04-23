@@ -24,3 +24,7 @@ hs_err_pid*
 
 # VS Code local settings
 .vscode/settings.json
+
+# project files
+.classpath
+.project
