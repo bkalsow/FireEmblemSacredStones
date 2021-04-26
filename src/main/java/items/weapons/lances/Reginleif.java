@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Reginleif extends Weapon implements Lance
 {
@@ -13,7 +14,7 @@ public class Reginleif extends Weapon implements Lance
 
     public Reginleif()
     {
-        super(maxUses, cost, "", "Prf", 1, 1,
+        super(maxUses, cost, "", WeaponRanks.prf, 1, 1,
             weight, might, hitChance, critChance,
             2, "Ephraim Only. Effective vs Armored/Horesback units.");
         setName("Reginleif");

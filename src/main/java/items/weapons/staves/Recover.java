@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Recover extends Stave
 {
     private final static int maxUses = 15;
@@ -11,7 +13,7 @@ public class Recover extends Stave
 
     public Recover()
     {
-        super(maxUses, cost, "Restores all HP to allies in adjacent spaces", "C", 1, 1,
+        super(maxUses, cost, "Restores all HP to allies in adjacent spaces", WeaponRanks.C, 1, 1,
             weight, might, hitChance, critChance, 3,
             "Restores all HP to an adjacent unit", 17);
         setName("Recover");

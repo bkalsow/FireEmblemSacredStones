@@ -1,6 +1,7 @@
 package main.java.items.weapons.dark;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Luna extends Weapon implements Dark
 {
@@ -14,7 +15,7 @@ public class Luna extends Weapon implements Dark
     public Luna()
     {
         super(maxUses, cost, "Negates enemy reistance.",
-            "C", 1, 2, weight, might, hitChance, critChance, 1,
+            WeaponRanks.C, 1, 2, weight, might, hitChance, critChance, 1,
             "Ignores enemy's resitance.");
         setName("Luna");
     }

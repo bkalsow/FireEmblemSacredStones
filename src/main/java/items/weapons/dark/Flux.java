@@ -1,6 +1,7 @@
 package main.java.items.weapons.dark;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Flux extends Weapon implements Dark
 {
@@ -13,7 +14,7 @@ public class Flux extends Weapon implements Dark
 
     public Flux()
     {
-        super(maxUses, cost, "", "D", 1, 2,
+        super(maxUses, cost, "", WeaponRanks.D, 1, 2,
             weight, might, hitChance, critChance, 1,
             "");
         setName("Flux");

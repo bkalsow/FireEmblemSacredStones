@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Garm extends Weapon implements Axe
 {
@@ -13,7 +14,7 @@ public class Garm extends Weapon implements Axe
 
     public Garm()
     {
-        super(maxUses, cost, "The Sacred Twin black axe. Spd +5", "S",
+        super(maxUses, cost, "The Sacred Twin black axe. Spd +5", WeaponRanks.S,
             1, 1, weight, might, hitChance, critChance, 1,
             "+5 Speed bonus to wielder while equipped. Effective vs. Monsters.");
         setName("Garm");

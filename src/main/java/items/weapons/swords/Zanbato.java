@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Zanbato extends Weapon implements Sword
 {
@@ -13,7 +14,7 @@ public class Zanbato extends Weapon implements Sword
 
     public Zanbato()
     {
-        super(maxUses, cost, "Effective against cavalry", "D",
+        super(maxUses, cost, "Effective against cavalry", WeaponRanks.D,
             1, 1, weight, might, hitChance, critChance, 1,
             "Effective vs. Cavalry units");
     }

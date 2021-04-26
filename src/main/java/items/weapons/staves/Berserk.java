@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Berserk extends Stave
 {
     private final static int maxUses = 7;
@@ -11,7 +13,7 @@ public class Berserk extends Stave
 
     public Berserk()
     {
-        super(maxUses, cost, "", "B", 1, 7,
+        super(maxUses, cost, "", WeaponRanks.B, 1, 7,
             weight, might, hitChance, critChance, 5,
             "Inflicts Berserk to one enemy.", 40);
         setName("Berserk");

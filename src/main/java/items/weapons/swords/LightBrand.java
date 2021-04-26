@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class LightBrand extends Weapon implements Sword
 {    
@@ -13,7 +14,7 @@ public class LightBrand extends Weapon implements Sword
 
     public LightBrand()
     {
-        super(maxUses, cost, "", "C",
+        super(maxUses, cost, "", WeaponRanks.C,
             1, 2, weight, might, hitChance, critChance, 1,
             "Casts Light when attacking from range.  Inflicts magic-basded damage. Cannot critical at range.");
     }

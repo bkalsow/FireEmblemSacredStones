@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Dragonspear extends Weapon implements Lance
 {
@@ -14,7 +15,7 @@ public class Dragonspear extends Weapon implements Lance
     public Dragonspear()
     {
         super(maxUses, cost, "Effective against wyverns.",
-            "C", 1, 1, weight, might, hitChance, critChance,
+            WeaponRanks.C, 1, 1, weight, might, hitChance, critChance,
             1, "Effective vs. Dragon units.");
         setName("Dragonspear");
     }

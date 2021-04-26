@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Restore extends Stave
 {
     private final static int maxUses = 10;
@@ -11,7 +13,7 @@ public class Restore extends Stave
 
     public Restore()
     {
-        super(maxUses, cost, "Cures all status conditions on an adjacent ally", "C", 1, 1,
+        super(maxUses, cost, "Cures all status conditions on an adjacent ally", WeaponRanks.C, 1, 1,
             weight, might, hitChance, critChance, 2,
             "Restores HP equla to (User's Magic +10) to an adjacent ally.", 11);
         setName("Restore");

@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Mend extends Stave
 {
     private final static int maxUses = 20;
@@ -11,7 +13,7 @@ public class Mend extends Stave
 
     public Mend()
     {
-        super(maxUses, cost, "Restores many HP to allies in adjacent spaces", "D", 1, 1,
+        super(maxUses, cost, "Restores many HP to allies in adjacent spaces", WeaponRanks.D, 1, 1,
             weight, might, hitChance, critChance, 3,
             "Restores HP equla to (User's Magic +20) to an adjacent ally.", 12);
         setName("Mend");

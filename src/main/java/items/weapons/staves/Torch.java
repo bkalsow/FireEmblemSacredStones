@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Torch extends Stave
 {
     private final static int maxUses = 10;
@@ -11,7 +13,7 @@ public class Torch extends Stave
 
     public Torch()
     {
-        super(maxUses, cost, "", "D", 1, 7,
+        super(maxUses, cost, "", WeaponRanks.D, 1, 7,
             weight, might, hitChance, critChance, 5,
             "Lights up area within casting range in Fog of War. Effect decreases by 1 each turn.", 15);
         setName("Torch");

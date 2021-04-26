@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class ArmorSlayer extends Weapon implements Sword
 {    
@@ -13,7 +14,7 @@ public class ArmorSlayer extends Weapon implements Sword
 
     public ArmorSlayer()
     {
-        super(maxUses, cost, "Effective against knights.", "D",
+        super(maxUses, cost, "Effective against knights.", WeaponRanks.D,
             1, 1, weight, might, hitChance, critChance, 2,
             "Effective against Armored units.");
     }

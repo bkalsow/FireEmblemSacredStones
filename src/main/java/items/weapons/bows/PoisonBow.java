@@ -1,6 +1,7 @@
 package main.java.items.weapons.bows;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class PoisonBow extends Weapon implements Bow
 {
@@ -13,7 +14,7 @@ public class PoisonBow extends Weapon implements Bow
 
     public PoisonBow()
     {
-        super(maxUses, cost, "", "E", 2, 2,
+        super(maxUses, cost, "", WeaponRanks.E, 2, 2,
             weight, might, hitChance, critChance,
             1, "");
         setName("Poison Bow");

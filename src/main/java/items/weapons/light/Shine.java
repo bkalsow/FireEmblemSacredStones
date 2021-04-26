@@ -1,6 +1,7 @@
 package main.java.items.weapons.light;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Shine extends Weapon implements Light
 {
@@ -13,7 +14,7 @@ public class Shine extends Weapon implements Light
 
     public Shine()
     {
-        super(maxUses, cost, "", "D", 1, 2,
+        super(maxUses, cost, "", WeaponRanks.D, 1, 2,
             weight, might, hitChance, critChance, 2,
             "");
         setName("Shine");

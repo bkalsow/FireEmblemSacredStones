@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Halberd extends Weapon implements Axe
 {
@@ -13,7 +14,7 @@ public class Halberd extends Weapon implements Axe
 
     public Halberd()
     {
-        super(maxUses, cost, "Effective against cavalry", "D",
+        super(maxUses, cost, "Effective against cavalry", WeaponRanks.D,
             1, 1, weight, might, hitChance, critChance, 1,
             "Effective vs. Cavalry units.");
         setName("Halberd");

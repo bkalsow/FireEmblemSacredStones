@@ -1,6 +1,7 @@
 package main.java.items.weapons.bows;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Longbow extends Weapon implements Bow
 {
@@ -13,7 +14,7 @@ public class Longbow extends Weapon implements Bow
 
     public Longbow()
     {
-        super(maxUses, cost, "Extended attack range.", "E", 2, 3,
+        super(maxUses, cost, "Extended attack range.", WeaponRanks.E, 2, 3,
             weight, might, hitChance, critChance,
             1, "");
         setName("Longbow");

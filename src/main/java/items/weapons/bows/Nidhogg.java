@@ -1,6 +1,7 @@
 package main.java.items.weapons.bows;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Nidhogg extends Weapon implements Bow
 {
@@ -14,7 +15,7 @@ public class Nidhogg extends Weapon implements Bow
     public Nidhogg()
     {
         super(maxUses, cost, "The Sacred twin serpent bow.  Luck +5",
-            "S", 2, 2, weight, might, hitChance, critChance,
+            WeaponRanks.S, 2, 2, weight, might, hitChance, critChance,
             1, "Luck +5. Effective vs. Monsters.");
         setName("Nidhogg");
     }

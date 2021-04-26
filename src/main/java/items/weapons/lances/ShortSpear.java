@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class ShortSpear extends Weapon implements Lance
 {
@@ -13,7 +14,7 @@ public class ShortSpear extends Weapon implements Lance
 
     public ShortSpear()
     {
-        super(maxUses, cost, "", "C", 1, 2,
+        super(maxUses, cost, "", WeaponRanks.C, 1, 2,
             weight, might, hitChance, critChance,
             1, "");
         setName("Short Spear");

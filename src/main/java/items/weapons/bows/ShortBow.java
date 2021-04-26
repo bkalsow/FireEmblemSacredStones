@@ -1,6 +1,7 @@
 package main.java.items.weapons.bows;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class ShortBow extends Weapon implements Bow
 {
@@ -13,7 +14,7 @@ public class ShortBow extends Weapon implements Bow
 
     public ShortBow()
     {
-        super(maxUses, cost, "", "D", 2, 2,
+        super(maxUses, cost, "", WeaponRanks.D, 2, 2,
             weight, might, hitChance, critChance,
             2, "");
         setName("Short Bow");

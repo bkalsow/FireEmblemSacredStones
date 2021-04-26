@@ -1,6 +1,7 @@
 package main.java.items.weapons.bows;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class KillerBow extends Weapon implements Bow
 {
@@ -13,7 +14,7 @@ public class KillerBow extends Weapon implements Bow
 
     public KillerBow()
     {
-        super(maxUses, cost, "Improves critical hit rate", "C", 2, 2,
+        super(maxUses, cost, "Improves critical hit rate", WeaponRanks.C, 2, 2,
             weight, might, hitChance, critChance,
             1, "");
         setName("Killer Bow");

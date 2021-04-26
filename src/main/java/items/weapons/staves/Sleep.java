@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Sleep extends Stave
 {
     private final static int maxUses = 3;
@@ -11,7 +13,7 @@ public class Sleep extends Stave
 
     public Sleep()
     {
-        super(maxUses, cost, "", "B", 1, 7,
+        super(maxUses, cost, "", WeaponRanks.B, 1, 7,
             weight, might, hitChance, critChance, 5,
             "Inflicts Sleep to one enemy.", 11);
         setName("Sleep");

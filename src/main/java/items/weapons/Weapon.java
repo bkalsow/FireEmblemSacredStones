@@ -8,14 +8,20 @@ import main.java.items.Item;
  */
 public abstract class Weapon extends Item 
 {
-    private String requiredRank;
+    private WeaponRanks requiredRank;
     private int minRange, maxRange, weight, might, hitRate, critChance, weaponEXP;
     private String effect = "";
 
-    public Weapon(int uses, int price, String description, String newRequiredRank,
+    public Weapon(int uses, int price, String description, WeaponRanks newRequiredRank,
         int newMinRange, int newMaxRange, int newWeight, int newMight, int newHit, int newCrit, int newWeaponEXP,
         String newEffect)
     {
+        if(uses < 1)
+            throw new IllegalArgumentException("New weapon must have at least one use");
+        if(price < 0)
+            throw new IllegalArgumentException("Price cannot be negative");
+        if(newMinRange < newMaxRange)
+            throw new IllegalArgumentException("Min range can't be greater than max range.");
         setUses(uses);
         setPrice(price);
         setDescription(description);
@@ -31,10 +37,26 @@ public abstract class Weapon extends Item
 
     public String getRequiredRank()
     {
-        return requiredRank;
+        switch(requiredRank)
+        {
+            case D:
+                return "D";
+            case C:
+                return "C";
+            case B:
+                return "B";
+            case A:
+                return "A";
+            case S:
+                return "S";
+            case prf:
+                return "Prf";
+            default:
+                return "E";
+        }
     }
 
-    public void setRequiredRank(String newRank)
+    public void setRequiredRank(WeaponRanks newRank)
     {
         requiredRank = newRank;
     }    
@@ -46,6 +68,8 @@ public abstract class Weapon extends Item
 
     public void setMinRange(int newRange)
     {
+        if(newRange > maxRange)
+            throw new IllegalArgumentException("New min range can't be greater than max range.");
         minRange = newRange;
     }
 

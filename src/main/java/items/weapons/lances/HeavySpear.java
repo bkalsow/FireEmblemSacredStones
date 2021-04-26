@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class HeavySpear extends Weapon implements Lance
 {
@@ -14,7 +15,7 @@ public class HeavySpear extends Weapon implements Lance
     public HeavySpear()
     {
         super(maxUses, cost, "Effective against knights.",
-            "D", 1, 1, weight, might, hitChance, critChance,
+            WeaponRanks.D, 1, 1, weight, might, hitChance, critChance,
             1, "Effective vs. Armored units");
         setName("Heavy Spear");
     }

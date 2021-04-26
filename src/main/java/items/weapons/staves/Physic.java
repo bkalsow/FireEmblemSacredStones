@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Physic extends Stave
 {
     private final static int maxUses = 15;
@@ -11,7 +13,7 @@ public class Physic extends Stave
 
     public Physic()
     {
-        super(maxUses, cost, "Restores HP to allies at a distance", "B", 1, 7,
+        super(maxUses, cost, "Restores HP to allies at a distance", WeaponRanks.B, 1, 7,
             weight, might, hitChance, critChance, 2,
             "Restores HP equla to (User's Magic +10) to one ally.", 11);
         setName("Physic");

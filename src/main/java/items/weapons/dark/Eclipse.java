@@ -1,6 +1,7 @@
 package main.java.items.weapons.dark;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Eclipse extends Weapon implements Dark
 {
@@ -13,7 +14,7 @@ public class Eclipse extends Weapon implements Dark
 
     public Eclipse()
     {
-        super(maxUses, cost, "Reduces enemy HP by half", "B",
+        super(maxUses, cost, "Reduces enemy HP by half", WeaponRanks.B,
             3, 10, weight, might, hitChance, critChance, 8,
             "Halves enemy's HP");
         setName("Eclipse");

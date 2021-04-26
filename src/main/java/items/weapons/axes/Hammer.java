@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Hammer extends Weapon implements Axe
 {
@@ -13,7 +14,7 @@ public class Hammer extends Weapon implements Axe
 
     public Hammer()
     {
-        super(maxUses, cost, "Effective against Knights.", "D",
+        super(maxUses, cost, "Effective against Knights.", WeaponRanks.D,
             1, 1, weight, might, hitChance, critChance, 2,
             "Effective against Armored units.");
         setName("Hammer");

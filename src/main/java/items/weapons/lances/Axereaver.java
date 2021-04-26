@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Axereaver extends Weapon implements Lance
 {
@@ -14,7 +15,7 @@ public class Axereaver extends Weapon implements Lance
     public Axereaver()
     {
         super(maxUses, cost, "Strong against axes.",
-            "C", 1, 1, weight, might, hitChance,
+            WeaponRanks.C, 1, 1, weight, might, hitChance,
             critChance, 2,
             "Advantage vs. Axes. Weak vs Swords.");
         setName("Axereaver");

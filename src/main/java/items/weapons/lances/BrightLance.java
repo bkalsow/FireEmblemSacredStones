@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class BrightLance extends Weapon implements Lance
 {
@@ -13,8 +14,8 @@ public class BrightLance extends Weapon implements Lance
 
     public BrightLance()
     {
-        super(maxUses, cost, "", "E", 1, 1,
-            weight, might, hitChance, critChance,
+        super(maxUses, cost, "", WeaponRanks.E,
+            1, 1, weight, might, hitChance, critChance,
             1, "Effective vs Monsters. Cannot be obtained normally.");
         setName("Bright Lance");
     }

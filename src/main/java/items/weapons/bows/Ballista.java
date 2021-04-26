@@ -1,6 +1,7 @@
 package main.java.items.weapons.bows;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Ballista extends Weapon implements Bow
 {
@@ -13,7 +14,7 @@ public class Ballista extends Weapon implements Bow
 
     public Ballista()
     {
-        super(maxUses, cost, "", "E", 3, 10,
+        super(maxUses, cost, "", WeaponRanks.E, 3, 10,
             weight, might, hitChance, critChance,
             4, "Archers/Snipers/Fleet only");
         setName("Ballista");

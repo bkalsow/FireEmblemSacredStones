@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Hatchet extends Weapon implements Axe
 {
@@ -14,7 +15,7 @@ public class Hatchet extends Weapon implements Axe
     public Hatchet()
     {
         super(maxUses, cost, "Lightweight and easy to hit with.",
-            "E", 1, 1, weight, might, hitChance, critChance, 1,
+            WeaponRanks.E, 1, 1, weight, might, hitChance, critChance, 1,
             "");
         setName("Hatchet");
     }

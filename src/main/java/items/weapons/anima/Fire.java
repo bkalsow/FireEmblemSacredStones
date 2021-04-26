@@ -1,6 +1,7 @@
 package main.java.items.weapons.anima;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Fire extends Weapon implements Anima
 {
@@ -14,7 +15,7 @@ public class Fire extends Weapon implements Anima
     public Fire()
     {
         super(maxUses, cost, "",
-            "E", 1, 2, weight, might, hitChance, critChance, 1,
+            WeaponRanks.E, 1, 2, weight, might, hitChance, critChance, 1,
             "");
         setName("Fire");
     }

@@ -1,6 +1,7 @@
 package main.java.items.weapons.dark;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Gleipnir extends Weapon implements Dark
 {
@@ -13,7 +14,7 @@ public class Gleipnir extends Weapon implements Dark
 
     public Gleipnir()
     {
-        super(maxUses, cost, "A Sacred Twin tome. SKill +5", "S", 1, 2,
+        super(maxUses, cost, "A Sacred Twin tome. SKill +5", WeaponRanks.S, 1, 2,
             weight, might, hitChance, critChance, 3,
             "Skill +5.");
         setName("Gleipnir");

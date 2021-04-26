@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Silence extends Stave
 {
     private final static int maxUses = 3;
@@ -12,7 +14,7 @@ public class Silence extends Stave
     public Silence()
     {
         super(maxUses, cost, "Halts all enemy magic for several turns",
-            "B", 1, 7, weight, might, hitChance, critChance, 5,
+            WeaponRanks.B, 1, 7, weight, might, hitChance, critChance, 5,
             "Inflicts Silence to one enemy.", 30);
         setName("Silence");
     }

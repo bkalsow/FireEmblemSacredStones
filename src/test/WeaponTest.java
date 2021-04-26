@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 import main.java.items.weapons.anima.Fire;
 
 /**
@@ -49,7 +50,7 @@ public class WeaponTest
     @Test
     public void testSetRequiredRankSetsCorrectRank()
     {
-        fire.setRequiredRank("S");
+        fire.setRequiredRank(WeaponRanks.S);
 
         assertTrue("Set rank is same as returned", fire.getRequiredRank().equals("S"));
     }

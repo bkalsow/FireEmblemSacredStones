@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class HandAxe extends Weapon implements Axe
 {
@@ -13,7 +14,7 @@ public class HandAxe extends Weapon implements Axe
 
     public HandAxe()
     {
-        super(maxUses, cost, "Doubles as ranged attack", "E",
+        super(maxUses, cost, "Doubles as ranged attack", WeaponRanks.E,
             1, 2, weight, might, hitChance, critChance, 1,
             "");
         setName("Hand Axe");

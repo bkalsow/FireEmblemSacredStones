@@ -1,6 +1,7 @@
 package main.java.items.weapons.anima;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Elfire extends Weapon implements Anima
 {
@@ -14,7 +15,7 @@ public class Elfire extends Weapon implements Anima
     public Elfire()
     {
         super(maxUses, cost, "",
-            "E", 1, 2, weight, might, hitChance, critChance, 2,
+            WeaponRanks.C, 1, 2, weight, might, hitChance, critChance, 2,
             "");
         setName("Elfire");
     }

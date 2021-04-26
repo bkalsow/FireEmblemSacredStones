@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Sieglinde extends Weapon implements Sword
 {    
@@ -13,7 +14,7 @@ public class Sieglinde extends Weapon implements Sword
 
     public Sieglinde()
     {
-        super(maxUses, cost, "The Sacred Twin storm blade. Str +5", "Prf",
+        super(maxUses, cost, "The Sacred Twin storm blade. Str +5", WeaponRanks.prf,
             1, 1, weight, might, hitChance, critChance, 1,
             "Eirika Only. Strength +5. Effective vs Monsters.");
     }

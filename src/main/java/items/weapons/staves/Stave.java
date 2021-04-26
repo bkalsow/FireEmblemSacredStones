@@ -1,12 +1,13 @@
 package main.java.items.weapons.staves;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public abstract class Stave extends Weapon
 {
     private int EXPAwarded = 0;
 
-    public Stave(int uses, int price, String description, String newRequiredRank,
+    public Stave(int uses, int price, String description, WeaponRanks newRequiredRank,
     int newMinRange, int newMaxRange, int newWeight, int newMight, int newHit, int newCrit, int newWeaponEXP,
     String newEffect, int newEXPAwarded)
     {

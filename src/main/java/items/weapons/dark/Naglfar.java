@@ -1,6 +1,7 @@
 package main.java.items.weapons.dark;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Naglfar extends Weapon implements Dark
 {
@@ -13,7 +14,7 @@ public class Naglfar extends Weapon implements Dark
 
     public Naglfar()
     {
-        super(maxUses, cost, "", "S", 1, 2,
+        super(maxUses, cost, "", WeaponRanks.S, 1, 2,
             weight, might, hitChance, critChance, 1,
             "");
         setName("Naglfar");

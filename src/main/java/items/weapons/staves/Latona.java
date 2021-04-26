@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Latona extends Stave
 {
     private final static int maxUses = 3;
@@ -11,7 +13,7 @@ public class Latona extends Stave
 
     public Latona()
     {
-        super(maxUses, cost, "A Sacred Twin staff.  The ancient Staff of Latona", "S", 1, 100,
+        super(maxUses, cost, "A Sacred Twin staff.  The ancient Staff of Latona", WeaponRanks.S, 1, 100,
             weight, might, hitChance, critChance, 1,
             "Restores all HP and status conditions to all allies, excluding the user.", 10);
         setName("Latona");

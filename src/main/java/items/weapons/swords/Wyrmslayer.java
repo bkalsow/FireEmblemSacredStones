@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Wyrmslayer extends Weapon implements Sword
 {
@@ -13,7 +14,7 @@ public class Wyrmslayer extends Weapon implements Sword
 
     public Wyrmslayer()
     {
-        super(maxUses, cost, "Effective against wyverns.", "C",
+        super(maxUses, cost, "Effective against wyverns.", WeaponRanks.C,
             1, 1, weight, might, hitChance, critChance, 1, "Effective vs. Dragon units.");
     }
 }

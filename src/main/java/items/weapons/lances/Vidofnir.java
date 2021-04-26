@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Vidofnir extends Weapon implements Lance
 {
@@ -14,7 +15,7 @@ public class Vidofnir extends Weapon implements Lance
     public Vidofnir()
     {
         super(maxUses, cost, "The Sacred Twin winged Lance. Def +5",
-            "S", 1, 1, weight, might, hitChance, critChance,
+            WeaponRanks.S, 1, 1, weight, might, hitChance, critChance,
             1, "Defense +5. Effective vs. Monsters");
         setName("Vidofnir");
     }

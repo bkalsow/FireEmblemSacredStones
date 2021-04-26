@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Siegmund extends Weapon implements Lance
 {
@@ -14,7 +15,7 @@ public class Siegmund extends Weapon implements Lance
     public Siegmund()
     {
         super(maxUses, cost, "The Sacred Twin fire lance. Str +5.",
-            "Prf", 1, 1, weight, might, hitChance, critChance,
+            WeaponRanks.prf, 1, 1, weight, might, hitChance, critChance,
             1, "Ephraim Only. Strength +5. Effective vs. Monsters.");
         setName("Siegmund");
     }

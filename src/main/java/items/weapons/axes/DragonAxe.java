@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class DragonAxe extends Weapon implements Axe
 {
@@ -13,7 +14,7 @@ public class DragonAxe extends Weapon implements Axe
 
     public DragonAxe()
     {
-        super(maxUses, cost, "", "C",
+        super(maxUses, cost, "", WeaponRanks.C,
             1, 1, weight, might, hitChance, critChance, 1,
             "Effective vs. Dragon units");
     }

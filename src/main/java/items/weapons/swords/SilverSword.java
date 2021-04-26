@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class SilverSword extends Weapon implements Sword
 {
@@ -13,7 +14,7 @@ public class SilverSword extends Weapon implements Sword
 
     public SilverSword()
     {
-        super(maxUses, cost, "", "A",
+        super(maxUses, cost, "", WeaponRanks.A,
             1, 1, weight, might, hitChance, critChance, 1, "");
     }
 }

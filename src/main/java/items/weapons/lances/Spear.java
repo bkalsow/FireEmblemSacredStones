@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Spear extends Weapon implements Lance
 {
@@ -13,7 +14,7 @@ public class Spear extends Weapon implements Lance
 
     public Spear()
     {
-        super(maxUses, cost, "Doubles as ranged attack.", "E", 1, 2,
+        super(maxUses, cost, "Doubles as ranged attack.", WeaponRanks.B, 1, 2,
             weight, might, hitChance, critChance,
             1, "");
         setName("Spear");

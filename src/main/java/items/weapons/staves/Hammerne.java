@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Hammerne extends Stave
 {
     private final static int maxUses = 3;
@@ -11,7 +13,7 @@ public class Hammerne extends Stave
 
     public Hammerne()
     {
-        super(maxUses, cost, "Restores an adjacent ally's weapons to new condition.", "C", 1, 1,
+        super(maxUses, cost, "Restores an adjacent ally's weapons to new condition.", WeaponRanks.C, 1, 1,
             weight, might, hitChance, critChance, 8,
             "Fully restores an adjacent ally's equipped weapon to full.  Does not work on Myrrh's Dragonstone.", 40);
         setName("Hammerne");

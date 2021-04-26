@@ -1,6 +1,7 @@
 package main.java.items.weapons.light;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Divine extends Weapon implements Light
 {
@@ -13,7 +14,7 @@ public class Divine extends Weapon implements Light
 
     public Divine()
     {
-        super(maxUses, cost, "", "C", 1, 2,
+        super(maxUses, cost, "", WeaponRanks.C, 1, 2,
             weight, might, hitChance, critChance, 3,
             "");
         setName("Divine");

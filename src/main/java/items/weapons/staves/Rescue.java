@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Rescue extends Stave
 {
     private final static int maxUses = 30;
@@ -11,7 +13,7 @@ public class Rescue extends Stave
 
     public Rescue()
     {
-        super(maxUses, cost, "Moves allies from distant spaces to adjacent ones.", "E", 1, 7,
+        super(maxUses, cost, "Moves allies from distant spaces to adjacent ones.", WeaponRanks.E, 1, 7,
             weight, might, hitChance, critChance, 7,
             "Teleports one ally to a space adjacent to user.", 40);
         setName("Rescue");

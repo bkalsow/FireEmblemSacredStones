@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class BattleAxe extends Weapon implements Axe
 {
@@ -14,7 +15,7 @@ public class BattleAxe extends Weapon implements Axe
     public BattleAxe()
     {
         super(maxUses, cost, "Strong, but difficult to wield.",
-            "B", 1, 1, weight, might, hitChance, critChance, 1,
+            WeaponRanks.B, 1, 1, weight, might, hitChance, critChance, 1,
             "");
         setName("Battle Axe");
     }

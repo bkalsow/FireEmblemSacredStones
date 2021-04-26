@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class BraveSword extends Weapon implements Sword
 {    
@@ -13,7 +14,7 @@ public class BraveSword extends Weapon implements Sword
 
     public BraveSword()
     {
-        super(maxUses, cost, "Can strike consecutively.", "B",
+        super(maxUses, cost, "Can strike consecutively.", WeaponRanks.B,
             1, 1, weight, might, hitChance, critChance, 2,
             "Allows user to attack twice in one attack.");
     }

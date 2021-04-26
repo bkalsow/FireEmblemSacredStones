@@ -1,6 +1,7 @@
 package main.java.items.weapons.anima;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Fimbulvetr extends Weapon implements Anima
 {
@@ -14,7 +15,7 @@ public class Fimbulvetr extends Weapon implements Anima
     public Fimbulvetr()
     {
         super(maxUses, cost, "",
-            "A", 1, 2, weight, might, hitChance, critChance, 1,
+            WeaponRanks.A, 1, 2, weight, might, hitChance, critChance, 1,
             "");
         setName("Fimbulvetr");
     }

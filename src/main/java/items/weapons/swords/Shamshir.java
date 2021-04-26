@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Shamshir extends Weapon implements Sword
 {   
@@ -13,7 +14,7 @@ public class Shamshir extends Weapon implements Sword
 
     public Shamshir()
     {
-        super(maxUses, cost, "Improves critical hit rate.", "D",
+        super(maxUses, cost, "Improves critical hit rate.", WeaponRanks.D,
             1, 1, weight, might, hitChance, critChance, 2,
             "Myrmidon/Swordmaster/Assassin/Eirika/Bonewalker/Wight only.");
     }

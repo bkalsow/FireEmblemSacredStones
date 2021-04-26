@@ -1,6 +1,7 @@
 package main.java.items.weapons.dark;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Fenrir extends Weapon implements Dark
 {
@@ -13,7 +14,7 @@ public class Fenrir extends Weapon implements Dark
 
     public Fenrir()
     {
-        super(maxUses, cost, "", "A", 1, 2,
+        super(maxUses, cost, "", WeaponRanks.A, 1, 2,
             weight, might, hitChance, critChance, 1,
             "");
         setName("Fenrir");

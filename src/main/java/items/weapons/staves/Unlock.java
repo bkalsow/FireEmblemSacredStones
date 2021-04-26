@@ -1,5 +1,7 @@
 package main.java.items.weapons.staves;
 
+import main.java.items.weapons.WeaponRanks;
+
 public class Unlock extends Stave
 {
     private final static int maxUses = 30;
@@ -11,7 +13,7 @@ public class Unlock extends Stave
 
     public Unlock()
     {
-        super(maxUses, cost, "Unlocks doors, even from a distance", "D", 1, 2,
+        super(maxUses, cost, "Unlocks doors, even from a distance", WeaponRanks.D, 1, 2,
             weight, might, hitChance, critChance, 5,
             "Opens a door.", 17);
         setName("Unlock");

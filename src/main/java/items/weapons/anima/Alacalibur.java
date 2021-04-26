@@ -1,6 +1,7 @@
 package main.java.items.weapons.anima;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Alacalibur extends Weapon implements Anima
 {
@@ -14,7 +15,7 @@ public class Alacalibur extends Weapon implements Anima
     public Alacalibur()
     {
         super(maxUses, cost, "A Sacred Twin tome. Spd +5.",
-            "B", 1, 2, weight, might, hitChance, critChance, 1,
+            WeaponRanks.B, 1, 2, weight, might, hitChance, critChance, 1,
             "Effective vs. Monsters. Cannot obtain normally.");
         setName("Alacalibur");
     }

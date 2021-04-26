@@ -1,6 +1,7 @@
 package main.java.items.weapons.light;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Aura extends Weapon implements Light
 {
@@ -13,7 +14,7 @@ public class Aura extends Weapon implements Light
 
     public Aura()
     {
-        super(maxUses, cost, "", "A", 1, 2,
+        super(maxUses, cost, "", WeaponRanks.A, 1, 2,
             weight, might, hitChance, critChance, 1,
             "");
         setName("Aura");

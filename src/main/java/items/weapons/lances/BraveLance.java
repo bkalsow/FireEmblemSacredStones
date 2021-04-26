@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class BraveLance extends Weapon implements Lance
 {
@@ -14,7 +15,7 @@ public class BraveLance extends Weapon implements Lance
     public BraveLance()
     {
         super(maxUses, cost, "Can strike consecutively",
-            "B", 1, 1, weight, might, hitChance, critChance,
+            WeaponRanks.B, 1, 1, weight, might, hitChance, critChance,
             1, "Allows user to attack twice in one attack.");
         setName("Brave Lance");
     }    

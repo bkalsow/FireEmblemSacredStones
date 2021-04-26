@@ -1,6 +1,7 @@
 package main.java.items.weapons.light;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Ivaldi extends Weapon implements Light
 {
@@ -14,7 +15,7 @@ public class Ivaldi extends Weapon implements Light
     public Ivaldi()
     {
         super(maxUses, cost, "A Sacred Twin tome. Def +5.",
-            "S", 1, 2, weight, might, hitChance, critChance, 1,
+            WeaponRanks.S, 1, 2, weight, might, hitChance, critChance, 1,
             "Defense +5. Effective vs. Monsters.");
         setName("Ivaldi");
     }

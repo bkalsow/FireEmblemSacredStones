@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class KillerAxe extends Weapon implements Axe
 {
@@ -14,7 +15,7 @@ public class KillerAxe extends Weapon implements Axe
     public KillerAxe()
     {
         super(maxUses, cost, "Improves critical hit rate.",
-            "C", 1, 1, weight, might, hitChance, critChance,
+            WeaponRanks.C, 1, 1, weight, might, hitChance, critChance,
             1, "");
         setName("Killer Axe");
     }

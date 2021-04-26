@@ -1,6 +1,7 @@
 package main.java.items.weapons.light;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Purge extends Weapon implements Light
 {
@@ -13,7 +14,7 @@ public class Purge extends Weapon implements Light
 
     public Purge()
     {
-        super(maxUses, cost, "", "B", 3, 10,
+        super(maxUses, cost, "", WeaponRanks.B, 3, 10,
             weight, might, hitChance, critChance, 1,
             "");
         setName("Purge");

@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class IronBlade extends Weapon implements Sword
 {    
@@ -13,7 +14,7 @@ public class IronBlade extends Weapon implements Sword
 
     public IronBlade()
     {
-        super(maxUses, cost, "", "D",
+        super(maxUses, cost, "", WeaponRanks.D,
             1, 1, weight, might, hitChance, critChance, 2, "");
     }
 }

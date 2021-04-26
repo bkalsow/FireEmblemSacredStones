@@ -1,6 +1,7 @@
 package main.java.items.weapons.bows;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class SilverBow extends Weapon implements Bow
 {
@@ -13,7 +14,7 @@ public class SilverBow extends Weapon implements Bow
 
     public SilverBow()
     {
-        super(maxUses, cost, "", "A", 2, 2,
+        super(maxUses, cost, "", WeaponRanks.A, 2, 2,
             weight, might, hitChance, critChance,
             1, "");
         setName("Silver Bow");

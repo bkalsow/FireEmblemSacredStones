@@ -1,6 +1,7 @@
 package main.java.items.weapons.lances;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class SilverLance extends Weapon implements Lance
 {
@@ -13,7 +14,7 @@ public class SilverLance extends Weapon implements Lance
 
     public SilverLance()
     {
-        super(maxUses, cost, "", "A", 1, 1,
+        super(maxUses, cost, "", WeaponRanks.A, 1, 1,
             weight, might, hitChance, critChance,
             1, "");
         setName("Silver Lance");

@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class PoisonAxe extends Weapon implements Axe
 {
@@ -13,7 +14,7 @@ public class PoisonAxe extends Weapon implements Axe
 
     public PoisonAxe()
     {
-        super(maxUses, cost, "", "D",
+        super(maxUses, cost, "", WeaponRanks.D,
             1, 1, weight, might, hitChance,
             critChance, 1, 
             "Inflicts Poison upon contact.");

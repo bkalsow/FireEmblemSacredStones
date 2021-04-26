@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class DevilAxe extends Weapon implements Axe
 {
@@ -13,7 +14,7 @@ public class DevilAxe extends Weapon implements Axe
 
     public DevilAxe()
     {
-        super(maxUses, cost, "Might injure its wielder.", "E",
+        super(maxUses, cost, "Might injure its wielder.", WeaponRanks.E,
             1, 1, weight, might, hitChance, critChance, 8,
             "May damage wielder instead of target.");
             setName("Devil Axe");

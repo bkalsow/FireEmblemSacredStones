@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class SteelAxe extends Weapon implements Axe
 {
@@ -13,7 +14,7 @@ public class SteelAxe extends Weapon implements Axe
 
     public SteelAxe()
     {
-        super(maxUses, cost, "", "E",
+        super(maxUses, cost, "", WeaponRanks.E,
             1, 1, weight, might, hitChance,
             critChance, 1, "");
         setName("Steel Axe");

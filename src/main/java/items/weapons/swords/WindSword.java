@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class WindSword extends Weapon implements Sword 
 {
@@ -13,7 +14,7 @@ public class WindSword extends Weapon implements Sword
 
     public WindSword()
     {
-        super(maxUses, cost, "", "B",
+        super(maxUses, cost, "", WeaponRanks.B,
             1, 2, weight, might, hitChance, critChance, 1,
             "Casts wind magic when used from range.  Inflicts magic-based damage. Effective vs. flying units.");
     }

@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class KillingEdge extends Weapon implements Sword
 {    
@@ -13,7 +14,7 @@ public class KillingEdge extends Weapon implements Sword
 
     public KillingEdge()
     {
-        super(maxUses, cost, "Improves critical hit rate.", "C",
+        super(maxUses, cost, "Improves critical hit rate.", WeaponRanks.C,
             1, 1, weight, might, hitChance, critChance, 1, "");
     }
 }

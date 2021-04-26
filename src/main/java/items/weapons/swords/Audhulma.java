@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Audhulma extends Weapon implements Sword
 {    
@@ -13,7 +14,7 @@ public class Audhulma extends Weapon implements Sword
 
     public Audhulma()
     {
-        super(maxUses, cost, "The Sacred Twin ice blade. Res +5", "S",
+        super(maxUses, cost, "The Sacred Twin ice blade. Res +5", WeaponRanks.S,
             1, 1, weight, might, hitChance, critChance, 1,
             "Resistance +5. Effective vs. Monsters.");
     }

@@ -1,6 +1,7 @@
 package main.java.items.weapons.swords;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Runesword extends Weapon implements Sword
 {    
@@ -13,7 +14,7 @@ public class Runesword extends Weapon implements Sword
 
     public Runesword()
     {
-        super(maxUses, cost, "Imbued with dark magic.", "A",
+        super(maxUses, cost, "Imbued with dark magic.", WeaponRanks.A,
             1, 2, weight, might, hitChance, critChance, 1,
             "Casts Nosferatu when used from range.  Restored HP equal to damage dealt.  Inflicts magic based damage.");
     }

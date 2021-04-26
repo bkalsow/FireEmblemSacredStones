@@ -1,6 +1,7 @@
 package main.java.items.weapons.axes;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Tomahawk extends Weapon implements Axe
 {
@@ -13,7 +14,7 @@ public class Tomahawk extends Weapon implements Axe
 
     public Tomahawk()
     {
-        super(maxUses, cost, "Doubles as ranged attack", "A",
+        super(maxUses, cost, "Doubles as ranged attack", WeaponRanks.A,
             1, 2, weight, might, hitChance, critChance, 1,
             "");
         setName("Tomahawk");

@@ -1,6 +1,7 @@
 package main.java.items.weapons.anima;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Bolting extends Weapon implements Anima
 {
@@ -14,7 +15,7 @@ public class Bolting extends Weapon implements Anima
     public Bolting()
     {
         super(maxUses, cost, "Long-range lightning strike.",
-            "E", 3, 10, weight, might, hitChance, critChance, 5,
+            WeaponRanks.B, 3, 10, weight, might, hitChance, critChance, 5,
             "");
         setName("Bolting");
     }

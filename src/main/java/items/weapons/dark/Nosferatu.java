@@ -1,6 +1,7 @@
 package main.java.items.weapons.dark;
 
 import main.java.items.weapons.Weapon;
+import main.java.items.weapons.WeaponRanks;
 
 public class Nosferatu extends Weapon implements Dark
 {
@@ -13,7 +14,7 @@ public class Nosferatu extends Weapon implements Dark
 
     public Nosferatu()
     {
-        super(maxUses, cost, "Drains enemy HP inco caster", "D", 1, 2,
+        super(maxUses, cost, "Drains enemy HP inco caster", WeaponRanks.D, 1, 2,
             weight, might, hitChance, critChance, 1,
             "Recovers user's HP equal to damage dealt.");
         setName("Nosferatu");
