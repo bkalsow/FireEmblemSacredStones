@@ -20,7 +20,7 @@ public abstract class Weapon extends Item
             throw new IllegalArgumentException("New weapon must have at least one use");
         if(price < 0)
             throw new IllegalArgumentException("Price cannot be negative");
-        if(newMinRange < newMaxRange)
+        if(newMinRange > newMaxRange)
             throw new IllegalArgumentException("Min range can't be greater than max range.");
         setUses(uses);
         setPrice(price);
