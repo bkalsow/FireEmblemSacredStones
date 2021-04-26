@@ -1,6 +1,8 @@
 package main.java.items.weapons.dark;
 
-public interface Dark 
+import main.java.items.weapons.Magic;
+
+public interface Dark extends Magic
 {
     
 }

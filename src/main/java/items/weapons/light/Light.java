@@ -1,6 +1,8 @@
 package main.java.items.weapons.light;
 
-public interface Light
+import main.java.items.weapons.Magic;
+
+public interface Light extends Magic
 {
     
 }

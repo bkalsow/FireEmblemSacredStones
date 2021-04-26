@@ -9,6 +9,12 @@ import org.junit.Test;
 import main.java.items.weapons.Weapon;
 import main.java.items.weapons.anima.Fire;
 
+/**
+ * for JUnit testing weapon subclasses.
+ * 
+ * @author Brandan Kalsow
+ * @version 1.0
+ */
 public class WeaponTest 
 {
     private Weapon fire;
@@ -19,12 +25,58 @@ public class WeaponTest
         fire = new Fire();
     }
 
+    /**
+     * Test that the default constructor returns a new weapon
+     */
     @Test
-    public void testConstructor()
+    public void testDefaultConstructor()
     {
-        assertTrue("Constructor creates a new Weapon", new Fire() instanceof Weapon);
+        assertTrue("Default constructor creates a new Weapon", new Fire() instanceof Weapon);
     }
 
+    /**
+     * Test that getRequiredRank works correctly
+     */
+    @Test
+    public void testGetRequiredRankReturnsCorrectRank()
+    {
+        assertTrue("Returned rank is same as expected.", fire.getRequiredRank().equals("E"));
+    }
+
+    /**
+     * Test that setRequiredRank works correctly
+     */
+    @Test
+    public void testSetRequiredRankSetsCorrectRank()
+    {
+        fire.setRequiredRank("S");
+
+        assertTrue("Set rank is same as returned", fire.getRequiredRank().equals("S"));
+    }
+
+    /**
+     * Test that getMinRange works correctly
+     */
+    @Test
+    public void testGetMinRangeReturnsCorrectRange()
+    {
+        assertTrue("Returned min Range is same as expected.", fire.getMinRange() == 1);
+    }
+
+    /**
+     * Test that setMinRange works correctly
+     */
+    @Test
+    public void testSetMinRangeSetsCorrectRange()
+    {
+        fire.setMinRange(0);
+
+        assertTrue("Set range is same as returned", fire.getMinRange() == 0);
+    }
+
+    /**
+     * Test that the hit method works correctly
+     */
     @Test
     public void hitDecrementsUsesBy1()
     {
