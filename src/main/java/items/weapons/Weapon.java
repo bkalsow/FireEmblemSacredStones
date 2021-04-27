@@ -30,6 +30,7 @@ public abstract class Weapon extends Item
         maxRange = newMaxRange;
         weight = newWeight;
         might = newMight;
+        hitRate = newHit;
         critChance = newCrit;
         weaponEXP = newWeaponEXP;
         effect = newEffect;
@@ -68,8 +69,9 @@ public abstract class Weapon extends Item
 
     public void setMinRange(int newRange)
     {
-        if(newRange > maxRange)
+        if(newRange > maxRange || newRange < 1)
             throw new IllegalArgumentException("New min range can't be greater than max range.");
+        
         minRange = newRange;
     }
 
@@ -80,6 +82,9 @@ public abstract class Weapon extends Item
 
     public void setMaxRange(int newRange)
     {
+        if(newRange < minRange)
+            throw new IllegalArgumentException("New max range can't be less than min range.");
+        
         maxRange = newRange;
     }
 
@@ -90,6 +95,9 @@ public abstract class Weapon extends Item
     
     public void setWeight(int newWeight)
     {
+        if(newWeight < 0)
+            throw new IllegalArgumentException("Weight can't be less than 0");
+        
         weight = newWeight;
     }
     
@@ -100,6 +108,9 @@ public abstract class Weapon extends Item
     
     public void setMight(int newMight)
     {
+        if(newMight < 0)
+            throw new IllegalArgumentException("Might cannot be less than 0");
+        
         might = newMight;
     }
     
@@ -110,6 +121,9 @@ public abstract class Weapon extends Item
     
     public void setHit(int newHit)
     {
+        if(newHit < 0 || newHit > 100)
+            throw new IllegalArgumentException("Hit must between 0 and 100");
+        
         hitRate = newHit;
     }
     
