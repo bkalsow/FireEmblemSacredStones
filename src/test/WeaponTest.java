@@ -219,6 +219,73 @@ public class WeaponTest
     }
 
     /**
+     * Tests that getCrit works correctly
+     */
+    @Test
+    public void testGetCritReturnsCorrectValue()
+    {
+        assertTrue("Crit should be 0", fire.getCrit() == 0);
+    }
+
+    /**
+     * Tests that setCrit works for valid value
+     */
+    @Test
+    public void testSetCritWorksForValidValue()
+    {
+        fire.setCrit(50);
+
+        assertTrue("Crit should be 50", fire.getCrit() == 50);
+    }
+
+    /**
+     * Crit cannot be less than 0
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testSetCritShouldFailForNewCritLessThan0()
+    {
+        fire.setCrit(-1);
+    }
+
+    /**
+     * Crit cannot be greater than 100
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testSetCritShouldFailForNewCritGreaterThan100()
+    {
+        fire.setCrit(101);
+    }
+
+    /**
+     * Tests that getWeaponEXP works correctly
+     */
+    @Test
+    public void testGetWeaponEXPWorksCorrectly()
+    {
+        assertTrue("Weapon EXP should be 1.", fire.getWeaponEXP() == 1);
+    }
+
+    /**
+     * Tests taht setWeaponEXP works correctly
+     */
+    @Test
+    public void testSetWeaponEXPWorksForValidValue()
+    {
+        fire.setWeaponEXP(2);
+
+        assertTrue("Weapon EXP should be 2.", fire.getWeaponEXP() == 2);
+    }
+
+    /**
+     * WeaponEXP cannot be negative
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testSetWeaponEXPFailsForNegativeValue()
+    {
+        fire.setWeaponEXP(-1);
+    }
+
+    /**
      * Test that the hit method works correctly
      */
     @Test

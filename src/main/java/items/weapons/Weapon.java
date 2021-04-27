@@ -134,6 +134,9 @@ public abstract class Weapon extends Item
 
     public void setCrit(int newCrit)
     {
+        if(newCrit < 0 || newCrit > 100)
+            throw new IllegalArgumentException("Crit chance must be between 0 and 100");
+        
         critChance = newCrit;
     }
     
@@ -144,6 +147,8 @@ public abstract class Weapon extends Item
 
     public void setWeaponEXP(int newWEXP)
     {
+        if(newWEXP < 0)
+            throw new IllegalArgumentException("Weapon EXP cannot be negative.");
         weaponEXP = newWEXP;
     }
 
