@@ -10,6 +10,7 @@ public abstract class Item
 	private int uses, price;
 	private String name;
 	private String description;
+	private boolean infiniteUses = false;
 	
 	/**
 	 * This method returns how many uses are left the the given item.
@@ -82,12 +83,30 @@ public abstract class Item
 	{
 		this.description = newDescription;
 	}
-	
+
+	/**
+	 * Gets whether this item has infinite uses
+	 */
+	public boolean getInfiniteUses()
+	{
+		return this.infiniteUses;
+	}
+
+	/**
+	 * This method sets whether an item has infinite uses or not
+	 * @param isInfinite whether or not this item has infinite uses
+	 */
+	public void setInfiniteUses(boolean isInfinite)
+	{
+		this.infiniteUses = isInfinite;
+	}
+
 	/**
 	 * This method decrements the number of uses of an item by 1.
 	 */
 	public void use()
 	{
-		this.uses--;
+		if(!infiniteUses)
+			this.uses--;
 	}
 }

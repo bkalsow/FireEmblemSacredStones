@@ -40,6 +40,8 @@ public abstract class Weapon extends Item
     {
         switch(requiredRank)
         {
+            case E:
+                return "E";
             case D:
                 return "D";
             case C:
@@ -53,7 +55,7 @@ public abstract class Weapon extends Item
             case prf:
                 return "Prf";
             default:
-                return "E";
+                return "-";
         }
     }
 

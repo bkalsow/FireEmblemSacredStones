@@ -18,5 +18,6 @@ public class Naglfar extends Weapon implements Dark
             weight, might, hitChance, critChance, 1,
             "");
         setName("Naglfar");
+        setInfiniteUses(true);
     }
 }
