@@ -97,7 +97,7 @@ public class WeaponTest
      * Test that getMaxRange works correctly
      */
     @Test
-    public void getMaxRangeReturnsCorrectRange()
+    public void testGetMaxRangeReturnsCorrectRange()
     {
         assertTrue("Returned expected max range", fire.getMaxRange() == 2);
     }
@@ -106,7 +106,7 @@ public class WeaponTest
      * Test that setMaxRange works for new max range >= min range
      */
     @Test
-    public void setMaxRangeSetsCorrectRange()
+    public void testSetMaxRangeSetsCorrectRange()
     {
         fire.setMaxRange(3);
 
@@ -117,7 +117,7 @@ public class WeaponTest
      * Test that setMaxRange fails on new maxRange < min range
      */
     @Test(expected = IllegalArgumentException.class)
-    public void setMaxRangeFailsForMaxRangeLessThanMinRange()
+    public void testSetMaxRangeFailsForMaxRangeLessThanMinRange()
     {
         fire.setMaxRange(0);
     }
@@ -126,7 +126,7 @@ public class WeaponTest
      * Tests if getWeight works correctly
      */
     @Test
-    public void getWeightReturnsCorrectValue()
+    public void testGetWeightReturnsCorrectValue()
     {
         assertTrue("Weight should match", fire.getWeight() == 4);
     }
@@ -135,7 +135,7 @@ public class WeaponTest
      * Tests if set weight works correctly
      */
     @Test
-    public void setWeightCorrectlySetsWeight()
+    public void testSetWeightCorrectlySetsWeight()
     {
         fire.setWeight(3);
 
@@ -146,7 +146,7 @@ public class WeaponTest
      * Tests to make sure negative weights aren't possible
      */
     @Test(expected = IllegalArgumentException.class)
-    public void setWeightFailsForNegativeValue()
+    public void testSetWeightFailsForNegativeValue()
     {
         fire.setWeight(-1);
     }
@@ -193,7 +193,7 @@ public class WeaponTest
      * Tests if setHit works for positive input
      */
     @Test
-    public void setHitWorksForPositiveInput()
+    public void testSetHitWorksForPositiveInput()
     {
         fire.setHit(100);
 
@@ -204,7 +204,7 @@ public class WeaponTest
      * Hit cannot be greater than 100
      */
     @Test(expected = IllegalArgumentException.class)
-    public void setHitFailsForValueGreaterThan100()
+    public void testSetHitFailsForValueGreaterThan100()
     {
         fire.setHit(101);
     }
@@ -213,7 +213,7 @@ public class WeaponTest
      * Hit cannot be less than 0
      */
     @Test(expected = IllegalArgumentException.class)
-    public void setHitFailsForValueLessThan0()
+    public void testSetHitFailsForValueLessThan0()
     {
         fire.setHit(-1);
     }
@@ -289,7 +289,7 @@ public class WeaponTest
      * Test that the hit method works correctly
      */
     @Test
-    public void hitDecrementsUsesBy1()
+    public void testHitCorrectlyDecrementsUsesBy1()
     {
         int expectedUses = fire.getRemainingUses() -1;
 
