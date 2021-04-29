@@ -9,22 +9,26 @@ import java.util.Random;
  */
 public abstract class JobClass 
 {
-    private int currentHP, currentMaxHP, maxHP, HPGrowth;
-    private int str, maxStr, strGrowth;
-    private int magic, maxMag, magGrowth;
-    private int spd, maxSpd, spdGrowth;
-    private int skl, maxSkl, sklGrowth;
-    private int lck, maxLck, lckGrowth;
-    private int def, maxDef, defGrowth;
-    private int res, maxRes, resGrowth;
+    private final int HPCap;
+    private final int strCap;
+    private final int magCap;
+    private final int spdCap;
+    private final int sklCap;
+    private final int lckCap;
+    private final int defCap;
+    private final int resCap;
+
+    private int currentHP, currentMaxHP, HPGrowth;
+    private int str, strGrowth;
+    private int magic, magGrowth;
+    private int spd, spdGrowth;
+    private int skl, sklGrowth;
+    private int lck, lckGrowth;
+    private int def, defGrowth;
+    private int res, resGrowth;
     private int level;
     private int EXP = 0;
     private final String className;
-
-    public JobClass()
-    {
-        className = "test";
-    }
     
     public JobClass(int newCurrentMaxHP, int newMaxHP, int newHPGrowth, int newStr, int newMaxStr,
         int newStrGrowth, int newMag, int newMaxMag, int newMagGrowth,
@@ -41,14 +45,14 @@ public abstract class JobClass
         def = newDef;
         res = newRes;
 
-        maxHP = newMaxHP;
-        maxStr = newMaxStr;
-        maxMag = newMaxMag;
-        maxSpd = newMaxSpd;
-        maxSkl = newMaxSkl;
-        maxLck = newMaxLck;
-        maxDef = newMaxDef;
-        maxRes = newMaxRes;
+        HPCap = newMaxHP;
+        strCap = newMaxStr;
+        magCap = newMaxMag;
+        spdCap = newMaxSpd;
+        sklCap = newMaxSkl;
+        lckCap = newMaxLck;
+        defCap = newMaxDef;
+        resCap = newMaxRes;
 
         HPGrowth = newHPGrowth;
         strGrowth = newStrGrowth;
@@ -156,42 +160,42 @@ public abstract class JobClass
 
         if(rand.nextInt(100) < HPGrowth)
         {
-            if(currentMaxHP < maxHP)
+            if(currentMaxHP < HPCap)
             currentMaxHP++;
         }
         if(rand.nextInt(100) < strGrowth)
         {
-            if(str < maxStr)
+            if(str < strCap)
                 str++;
         }
         if(rand.nextInt(100) < magGrowth)
         {
-            if(magic < maxMag)
+            if(magic < magCap)
             magic++;
         }
         if(rand.nextInt(100) < spdGrowth)
         {
-            if(spd < maxSpd)
+            if(spd < spdCap)
                 spd++;
         }
         if(rand.nextInt(100) < sklGrowth)
         {   
-            if(skl < maxSkl)
+            if(skl < sklCap)
                 skl++;
         }
         if(rand.nextInt(100) < lckGrowth)
         {
-            if(lck < maxLck)
+            if(lck < lckCap)
                 lck++;
         }
         if(rand.nextInt(100) < defGrowth)
         {
-            if(def < maxDef)
+            if(def < defCap)
                 def++;
         }
         if(rand.nextInt(100) < resGrowth)
         {
-            if(res < maxRes)
+            if(res < resCap)
                 res++;
         }  
     }
