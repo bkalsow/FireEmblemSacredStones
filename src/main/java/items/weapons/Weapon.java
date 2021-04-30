@@ -3,6 +3,7 @@ package main.java.items.weapons;
 import main.java.items.Item;
 
 /**
+ * This class controls the methods shared by all weapons
  * @author Brandan Kalsow
  * @version 1.0
  */
@@ -36,6 +37,10 @@ public abstract class Weapon extends Item
         effect = newEffect;
     }
 
+    /**
+     * Gets the required rank of this weapon
+     * @return the minimum required rank of this weapon as a String
+     */
     public String getRequiredRank()
     {
         switch(requiredRank)
@@ -59,16 +64,28 @@ public abstract class Weapon extends Item
         }
     }
 
+    /**
+     * Sets the new required rank for this weapon
+     * @param newRank the new minimum weapon rank for this weapon
+     */
     public void setRequiredRank(WeaponRanks newRank)
     {
         requiredRank = newRank;
     }    
 
+    /**
+     * Returns the minimum range for this weapon
+     * @return the minimum range of this weapon as an integer (min 1)
+     */
     public int getMinRange()
     {
         return minRange;
     }
 
+    /**
+     * Sets the minimum range for this weapon
+     * @param newRange the new minimum range for this weapon
+     */
     public void setMinRange(int newRange)
     {
         if(newRange > maxRange || newRange < 1)
@@ -77,11 +94,19 @@ public abstract class Weapon extends Item
         minRange = newRange;
     }
 
+    /**
+     * Gets the maximum range for this weapon
+     * @return the maximum range of this weapon as an integer (min 1)
+     */
     public int getMaxRange()
     {
         return maxRange;
     }
 
+    /**
+     * Sets the maximum range for this weapon
+     * @param newRange the new maximum range of this weapon
+     */
     public void setMaxRange(int newRange)
     {
         if(newRange < minRange)
@@ -90,11 +115,19 @@ public abstract class Weapon extends Item
         maxRange = newRange;
     }
 
+    /**
+     * Gets the weight of this weapon
+     * @return the weight of this weapon as an integer
+     */
     public int getWeight()
     {
         return weight;
     }
     
+    /**
+     * Sets the weight of this weapon
+     * @param newWeight the new weight of this weapon (min 0)
+     */
     public void setWeight(int newWeight)
     {
         if(newWeight < 0)
@@ -103,11 +136,19 @@ public abstract class Weapon extends Item
         weight = newWeight;
     }
     
+    /**
+     * Gets the might of this weapon
+     * @return the might of this weapon as an integer
+     */
     public int getMight()
     {
         return might;
     }
     
+    /**
+     * Sets the might of this weapon
+     * @param newMight the new might of this weapon (min 0)
+     */
     public void setMight(int newMight)
     {
         if(newMight < 0)
@@ -116,11 +157,19 @@ public abstract class Weapon extends Item
         might = newMight;
     }
     
+    /**
+     * Gets the hit chance of this weapon
+     * @return the hit chance of this weapon as an integer
+     */
     public int getHit()
     {
         return hitRate;
     }
     
+    /**
+     * Sets the hit chance of this weapon
+     * @param newHit the new hit chance of this weapon (must be between 1 and 100)
+     */
     public void setHit(int newHit)
     {
         if(newHit < 0 || newHit > 100)
@@ -129,11 +178,19 @@ public abstract class Weapon extends Item
         hitRate = newHit;
     }
     
+    /**
+     * Gets the crit chance of this weapon
+     * @return the crit chance of this weapon as an int
+     */
     public int getCrit()
     {
         return critChance;
     }
 
+    /**
+     * Sets the crit chance of this weapon
+     * @param newCrit the new crit chance of this weapon (must be between 1 and 100)
+     */
     public void setCrit(int newCrit)
     {
         if(newCrit < 0 || newCrit > 100)
@@ -142,11 +199,19 @@ public abstract class Weapon extends Item
         critChance = newCrit;
     }
     
+    /**
+     * gets the weapon EXP earned by using this weapon
+     * @retun the weapon EXP as an integer
+     */
     public int getWeaponEXP()
     {
         return weaponEXP;
     }
 
+    /**
+     * Sets the Weapon EXP value for this weapon
+     * @param newWEXP the new weapon EXP value (min 0)
+     */
     public void setWeaponEXP(int newWEXP)
     {
         if(newWEXP < 0)
@@ -154,16 +219,27 @@ public abstract class Weapon extends Item
         weaponEXP = newWEXP;
     }
 
-    public void setEffect(String newEffect)
-    {
-        effect = newEffect;
-    }
-
+    /**
+     * Gets the effect of this weapon
+     */
     public String getEffect()
     {
         return effect;
     }
 
+    /**
+     * sets the effect for this werpon
+     * @param newEffect the new effect of this weapon
+     */
+    public void setEffect(String newEffect)
+    {
+        effect = newEffect;
+    }
+
+
+    /**
+     * Decrements remaining uses by 1 since this weapon has been used
+     */
     public void hit()
     {
         this.use();
