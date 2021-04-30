@@ -236,7 +236,6 @@ public abstract class Weapon extends Item
         effect = newEffect;
     }
 
-
     /**
      * Decrements remaining uses by 1 since this weapon has been used
      */
