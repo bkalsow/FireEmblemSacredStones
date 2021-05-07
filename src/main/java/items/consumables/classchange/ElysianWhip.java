@@ -4,15 +4,15 @@ import java.util.ArrayList;
 
 import main.java.characters.unitclasses.JobClass;
 
-public class HeroCrest extends classChanger
+public class ElysianWhip extends classChanger
 {
-    public HeroCrest()
+    public ElysianWhip()
     {
-        super("For mercenaries, myrmidons and fighters lv. 10 and up");
+        super("For pegasus knights and wyvern riders lv. 10 and up");
 
         ArrayList<JobClass> classes = new ArrayList<>();
         //TODO: add restricted classes after they are created
         setUseableClasses(classes);
-        setName("Hero Crest");
+        setName("Elysian Whip");
     }
 }
