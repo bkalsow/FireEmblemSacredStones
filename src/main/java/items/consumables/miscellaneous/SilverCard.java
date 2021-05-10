@@ -8,7 +8,7 @@ public class SilverCard extends Item
     {
         super();
         setName("Silver Card");
-        setDescription("A special card taht reduces the cost of all items by half.");
+        setDescription("A special card that reduces the cost of all items by half.");
         setPrice(4000);
         setUses(1);
     }
