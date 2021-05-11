@@ -1,8 +1,7 @@
 package main.java.items.consumables.classchange;
 
 import java.util.ArrayList;
-
-import main.java.characters.unitclasses.JobClass;
+import main.java.characters.unitclasses.UnitClass;
 
 public class MasterSeal extends classChanger
 {
@@ -10,7 +9,7 @@ public class MasterSeal extends classChanger
     {
         super("For some units Lv. 10 and up who have not changed class");
 
-        ArrayList<JobClass> classes = new ArrayList<>();
+        ArrayList<UnitClass> classes = new ArrayList<>();
         //TODO: add restricted classes after they are created
         setUseableClasses(classes);
         setName("Master Seal");

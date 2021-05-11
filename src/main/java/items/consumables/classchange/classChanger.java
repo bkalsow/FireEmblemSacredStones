@@ -1,8 +1,7 @@
 package main.java.items.consumables.classchange;
 
 import java.util.ArrayList;
-
-import main.java.characters.unitclasses.JobClass;
+import main.java.characters.unitclasses.UnitClass;
 import main.java.items.Item;
 
 /**
@@ -12,7 +11,7 @@ import main.java.items.Item;
 public class classChanger extends Item
 {
     private final int MAX_USES = 1;
-    private ArrayList<JobClass> restrictedClasses;
+    private ArrayList<UnitClass> restrictedClasses;
 	
 	classChanger(String description)
 	{
@@ -25,12 +24,12 @@ public class classChanger extends Item
 	 * This method returns which classes may use this class changer.
 	 * @return an arrayList containing the availible classes.
 	 */
-    public ArrayList<JobClass> getUseableClasses()
+    public ArrayList<UnitClass> getUseableClasses()
     {
         return restrictedClasses;
     }
 
-	public void setUseableClasses(ArrayList<JobClass> newClasses)
+	public void setUseableClasses(ArrayList<UnitClass> newClasses)
 	{
 		restrictedClasses = newClasses;
 	}
