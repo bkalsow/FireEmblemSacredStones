@@ -1,9 +1,8 @@
 package main.java.items.weapons.lances;
 
-import main.java.items.weapons.Weapon;
 import main.java.items.weapons.WeaponRanks;
 
-public class HeavySpear extends Weapon implements Lance
+public class HeavySpear extends Lance
 {
     private final static int maxUses = 16;
     private final static int weight = 14;

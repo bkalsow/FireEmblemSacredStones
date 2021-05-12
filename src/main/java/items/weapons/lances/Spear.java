@@ -1,9 +1,8 @@
 package main.java.items.weapons.lances;
 
-import main.java.items.weapons.Weapon;
 import main.java.items.weapons.WeaponRanks;
 
-public class Spear extends Weapon implements Lance
+public class Spear extends Lance
 {
     private final static int maxUses = 150;
     private final static int weight = 10;

@@ -1,9 +1,8 @@
 package main.java.items.weapons.lances;
 
-import main.java.items.weapons.Weapon;
 import main.java.items.weapons.WeaponRanks;
 
-public class Javelin extends Weapon implements Lance
+public class Javelin extends Lance
 {
     private final static int maxUses = 20;
     private final static int weight = 11;

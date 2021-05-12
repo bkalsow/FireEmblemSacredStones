@@ -1,9 +1,8 @@
 package main.java.items.weapons.lances;
 
-import main.java.items.weapons.Weapon;
 import main.java.items.weapons.WeaponRanks;
 
-public class Vidofnir extends Weapon implements Lance
+public class Vidofnir extends Lance
 {
     private final static int maxUses = 30;
     private final static int weight = 11;

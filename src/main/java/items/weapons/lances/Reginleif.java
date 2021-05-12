@@ -1,9 +1,8 @@
 package main.java.items.weapons.lances;
 
-import main.java.items.weapons.Weapon;
 import main.java.items.weapons.WeaponRanks;
 
-public class Reginleif extends Weapon implements Lance
+public class Reginleif extends Lance
 {
     private final static int maxUses = 45;
     private final static int weight = 8;

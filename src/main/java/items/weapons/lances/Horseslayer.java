@@ -1,9 +1,8 @@
 package main.java.items.weapons.lances;
 
-import main.java.items.weapons.Weapon;
 import main.java.items.weapons.WeaponRanks;
 
-public class Horseslayer extends Weapon implements Lance
+public class Horseslayer extends Lance
 {
     private final static int maxUses = 16;
     private final static int weight = 13;
